@@ -1,4 +1,63 @@
 @font-face {
    font-family: "Aleo-Variable";
-   src: url("Aleo-VariableFont_wght.ttf")
+   src: url("./fonts/Aleo-VariableFont_wght.ttf");
+}
+
+@font-face {
+   font-family: "NotoSans";
+   src: url("./fonts/NotoSans-VariableFont_wdth\,wght.ttf");
+}
+
+html,
+*,
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Aleo-Variable;
+}
+
+body {
+   background-image: url("./images/pattern-7451714_1920.jpg");
+   font-size: 18px;
+   background-attachment: fixed;
+}
+
+
+header {
+   display: flex;
+   margin: 5rem 10rem;
+   justify-content: space-around;
+}
+
+svg {
+   width: 1.5rem;
+}
+
+.picture-container {
+   background-image: url("./images/william-bailey1.jpg");
+   background-size: cover;
+   width: 35%;
+   height: 450px;
+}
+
+.picture-container h1 {
+   text-align: center;
+   color: white;
+   margin-top: 400px;
+   font-size: 2.5rem;
+}
+
+.about-me {
+   width: 65%;
+   background-color: white;
+   padding: 3rem 1rem;
+   padding-bottom: 2rem;
+   margin: 5rem auto;
+   border-top-right-radius: 1rem;
+   border-bottom-right-radius: 1rem;
+   box-shadow: 1px 1px 1px 2px;
+}
+
+.header-links {
+   margin-top: 2rem;
 }
