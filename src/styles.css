@@ -22,7 +22,7 @@ body {
    background-attachment: fixed;
 }
 
-
+/* Header */
 header {
    display: flex;
    margin: 5rem 10rem;
@@ -34,53 +34,123 @@ svg {
 }
 
 .picture-container {
-   background-image: url("./images/william-bailey1.jpg");
-   background-size: cover;
-   width: 35%;
-   min-width: 430px;
-   height: 450px;
+   position: relative;
+   height: auto;
+}
+
+.picture-container img {
+   max-width: 405px;
+   box-shadow: 0px 5px 15px 4px;
 }
 
 .picture-container h1 {
+   position: absolute;
+   bottom: 15px;
+   right: 60px;
    color: white;
-   margin-top: 400px;
    font-size: 2.5rem;
 }
 
 .about-me {
-   width: 65%;
+   width: auto;
+   height: auto;
    background-color: white;
    padding: 3rem 1rem;
    padding-bottom: 2rem;
-   margin: 5rem auto;
+   margin: auto 0;
    border-top-right-radius: 1rem;
    border-bottom-right-radius: 1rem;
-   box-shadow: 1px 1px 1px 1px;
+   box-shadow: 1px 13px 15px 4px;
+   overflow: hidden;
+}
+
+.about-me h2 {
+   font-size: 2rem;
+   width: auto;
+}
+
+.about-me p {
+   font-size: 1.3rem;
+   width: auto;
 }
 
 .header-links {
    margin-top: 2rem;
    text-align: right;
+   width: auto;
 }
 
 .header-links a {
    padding: 0.2rem;
 }
 
+/* My Work */
+
 main {
-   margin: 0rem 3rem;
+   margin: 0;
 }
 
 .work-heading h2 {
    color: white;
    text-align: center;
+   font-size: 2rem;
 }
 
 .work-container {
    display: flex;
-   background-color: white;
+   flex-wrap: wrap;
+   margin-bottom: 5rem;
+}
+
+.work-cards {
+   margin: auto;
+   margin-top: 2rem;
+   max-width: 25%;
+   min-width: 300px;
+   box-shadow: 1px 13px 15px 4px;
 }
 
 .work-image {
+   text-align: center;
+   color: white;
    background-color: rgb(211, 89, 89);
+   min-width: 300px;
+   max-width: 300px;
+   min-height: 200px;
+}
+
+.work-info {
+   background-color: white;
+   border-top: 1px solid black;
+   min-width: 268px;
+   max-width: 268px;
+   padding: 1rem;
+}
+
+/* Footer */
+
+footer {
+   background-color: rgb(211, 89, 89);
+   padding: 3rem;
+   display: flex;
+   border-top: 2px solid black;
+}
+
+.footer-image img {
+   width: 500px;
+}
+
+.contact-me {
+   padding: 4rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.footer-links {
+   margin-top: 5rem;
+}
+
+.footer-links svg {
+   padding: 1rem;
+   width: 3rem;
 }
